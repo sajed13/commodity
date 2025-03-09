@@ -1,5 +1,5 @@
 {
-  "name": "sajed13/laravel-commodity",
+  "name": "sajed13/commodity",
   "description": "A Laravel package for fetching commodity data",
   "type": "library",
   "require": {
