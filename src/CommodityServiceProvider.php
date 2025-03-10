@@ -10,7 +10,7 @@ class CommodityServiceProvider extends ServiceProvider
     {
         // routes and migrations
         $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__.'/migrations');
     }
 
     public function register()
