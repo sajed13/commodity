@@ -6,6 +6,9 @@ use Illuminate\Support\ServiceProvider;
 
 class CommodityServiceProvider extends ServiceProvider
 {
+    protected $commands = [
+        \Sajed13\Commodity\Console\Commands\FetchCommodities::class,
+    ];
     public function boot()
     {
         // routes and migrations
@@ -15,6 +18,6 @@ class CommodityServiceProvider extends ServiceProvider
 
     public function register()
     {
-        //
+        $this->commands($this->commands);
     }
 }
